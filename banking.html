@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Account</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-red-300">
+    
+    <main class="w-3/4 mx-auto" >
+        <h1 class="text-5xl text-center font-bold mt-10">My All <span class="text-emerald-500	">Account !!!</span></h1>
+        <section>
+            <div class="grid grid-cols-3 mt-10 gap-5">
+                <div class="bg-lime-300 rounded p-3" >
+                    <h1 id="depositeId" class="text-4xl font-semibold text-center">Total Deposite</h1>
+                    <h1 class="text-center text-5xl font-semibold mt-3">$<span id="depositeMoney">00</span></h1>
+                </div>
+
+                <div id="withdrawId" class="bg-teal-300 rounded p-3" >
+                    <h1 class="text-4xl font-semibold text-center">Total Withdraw</h1>
+                    <h1 class="text-center text-5xl font-semibold mt-3">$<spa id="withdrawMoney">00</spa></h1>
+                </div>
+                
+                <div class="bg-indigo-300 rounded p-3" >
+                    <h1 id="balanceId" class="text-4xl font-semibold text-center">Balance</h1>
+                    <h1 class="text-center text-5xl font-semibold mt-3">$<span id="balanceMoney">2300</span></h1>
+                </div>
+            </div>
+        </section>
+        <section class="mt-10">
+            <div class="grid grid-cols-2 gap-5 ">
+                <div class="p-10 bg-violet-800 rounded	">
+                    <h1 class="text-4xl font-semibold text-white"> Deposite</h1>
+
+                    <input id="depositeForm"  class="mt-5 p-2 w-full block" type="number" placeholder="$ Your Deposite Money ">
+                    
+                    <button id="depositeBtn" class="mt-3 text-white bg-pink-700 px-3 py-2 rounded font-bold">Add Money</button>
+                </div>
+                <div class="p-10 bg-purple-800	 rounded	">
+                    <h1 class="text-4xl font-semibold text-white">Withdraw</h1>
+                    <input id="withdrawForm"  class="mt-5 p-2 w-full block" type="number" placeholder="$ Your Deposite Money ">
+                    <button id="withdrawBtn" class="mt-3 text-white bg-pink-700 px-3 py-2 rounded font-bold">Pick Off </button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <script src="banking.js"></script>
+</body>
+</html>
